@@ -19,7 +19,6 @@
 */
 
 #include <algorithm>
-#include <cmath>
 
 #include "search.h"
 #include "timeman.h"
@@ -63,7 +62,7 @@ namespace {
     }
 
     // We also try to take advantage of possible weaknesses in time management of our opponent
-    ratio *= sqrt(myTime / (double)herTime);
+    ratio *= (3 * myTime + 7 * herTime) / (10.0 * herTime);
 
     int time = int(std::min(1.0, ratio) * std::max(0, myTime - moveOverhead));
 
