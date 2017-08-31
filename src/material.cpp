@@ -118,7 +118,7 @@ namespace {
     }
 
     // Special handling of Queen vs. Minors
-    if  (pieceCount[Us][QUEEN] == 1 && pieceCount[Them][QUEEN] == 0)
+     if (pieceCount[Us][QUEEN] > pieceCount[Them][QUEEN])
          bonus += QueenMinorsImbalance[pieceCount[Them][KNIGHT] + pieceCount[Them][BISHOP]];
 
     return bonus;
