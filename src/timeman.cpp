@@ -62,7 +62,7 @@ namespace {
     }
 
     // We also try to take advantage of possible weaknesses in time management of our opponent
-    ratio *= (3 * myTime + 7 * herTime) / (10.0 * herTime);
+    ratio *= (2 * myTime + 8 * herTime) / (10.0 * herTime);
 
     int time = int(std::min(1.0, ratio) * std::max(0, myTime - moveOverhead));
 
