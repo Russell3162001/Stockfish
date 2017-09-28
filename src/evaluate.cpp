@@ -29,6 +29,31 @@
 #include "material.h"
 #include "pawns.h"
 
+Value PawnValueMg   = (Value)171;
+Value PawnValueEg   = (Value)240;
+Value KnightValueMg = (Value)764;
+Value KnightValueEg = (Value)848;
+Value BishopValueMg = (Value)826;
+Value BishopValueEg = (Value)891;
+Value RookValueMg   = (Value)1282;
+Value RookValueEg   = (Value)1373;
+Value QueenValueMg  = (Value)2526;
+Value QueenValueEg  = (Value)2646;
+Value MidgameLimit  = (Value)15258;
+Value EndgameLimit  = (Value)3915;
+TUNE(SetRange(0, 500), PawnValueMg);
+TUNE(SetRange(0, 500), PawnValueEg);
+TUNE(SetRange(0, 1200), KnightValueMg);
+TUNE(SetRange(0, 1200), KnightValueEg);
+TUNE(SetRange(0, 1200), BishopValueMg);
+TUNE(SetRange(0, 1200), BishopValueEg);
+TUNE(SetRange(0, 2000), RookValueMg);
+TUNE(SetRange(0, 2000), RookValueEg);
+TUNE(SetRange(0, 4000), QueenValueMg);
+TUNE(SetRange(0, 4000), QueenValueEg);
+TUNE(SetRange(0, 25000), MidgameLimit);
+TUNE(SetRange(0, 6000), EndgameLimit);
+
 namespace {
 
   namespace Trace {
